@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.username-setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.username-setup input {
+  margin: 10px 0;
+  padding: 15px;
+  width: 300px;
+  font-size: 18px;
+}
+
+.username-setup button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  background: #0084ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.username-setup button:hover {
+  background: #006fd6;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messenger</title>
+  <link rel="stylesheet" href="Harapa.css">
+</head>
+<body>
+  <div class="messenger">
+    <div class="header">Messenger</div>
+
+    <!-- Password Screen -->
+    <div id="password-screen" class="username-setup">
+      <h2>Enter Password</h2>
+      <input type="password" id="password-input" placeholder="Enter secret password">
+      <button onclick="checkPassword()">Unlock</button>
+    </div>
+
+    <!-- Username Setup -->
+    <div id="setup" class="username-setup" style="display:none;">
+      <h2>Enter Usernames</h2>
+      <input type="text" id="username1" placeholder="Enter username for User 1">
+      <input type="text" id="username2" placeholder="Enter username for User 2">
+      <button onclick="startChat()">Start Chat</button>
+    </div>
+
+    <!-- Chat Section -->
+    <div id="chat" style="display: none; flex: 1; flex-direction: column;">
+      <div class="messages" id="messages"></div>
+
+      <div class="input-area">
+        <input type="text" id="message1" placeholder="User 1 type a message...">
+        <button onclick="sendMessage(1)">Send</button>
+      </div>
+
+      <div class="input-area">
+        <input type="text" id="message2" placeholder="User 2 type a message...">
+        <button onclick="sendMessage(2)">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="Harapa.js"></script>
+</body>
+</html>

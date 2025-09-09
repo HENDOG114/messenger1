@@ -1,0 +1,52 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.add-container input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.add-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #0084ff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-container button:hover {
+  background: #006fd6;
+}
+
+#friendsList {
+  list-style: none;
+  padding: 0;
+}
+
+#friendsList li {
+  background: #e4e6eb;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
