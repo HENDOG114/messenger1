@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messenger</title>
+  <link rel="stylesheet" href="player.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar with friends -->
+    <div class="sidebar">
+      <h2>Friends</h2>
+      <ul id="friendsList"></ul>
+    </div>
+
+    <!-- Chat area -->
+    <div class="chat-area">
+      <div class="header" id="chatWith">Select a friend</div>
+      <div class="messages" id="messages"></div>
+      <div class="input-area">
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="player.js"></script>
+</body>
+</html>

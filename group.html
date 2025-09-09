@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Group Chat</title>
+  <link rel="stylesheet" href="group.css">
+</head>
+<body>
+  <div class="login" id="loginDiv">
+    <h2>Enter Username</h2>
+    <input type="text" id="usernameInput" placeholder="Enter your name">
+    <button onclick="enterChat()">Enter Chat</button>
+  </div>
+
+  <div class="chat" id="chatDiv" style="display:none;">
+    <h2>Group Chat</h2>
+    <div class="messages" id="messages"></div>
+    <div class="input-area">
+      <input type="text" id="messageInput" placeholder="Type a message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="group.js"></script>
+</body>
+</html>
